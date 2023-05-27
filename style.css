@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+
+* {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  box-sizing: border-box;
+  background-color: hsl(218, 52%, 91%);
+  font-family: "Karla", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  padding: 1.5rem 4rem;
+}
+
+.container {
+  display: grid;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 2rem;
+}
+
+.card-1 {
+  background-color: hsl(0, 0%, 100%);
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 2rem;
+}
+
+.card-1__title {
+  color: hsl(179, 62%, 43%);
+  font-weight: 700;
+}
+
+.card-1__sub {
+  color: hsl(71, 73%, 54%);
+  font-weight: 700;
+}
+
+.card-1__copy {
+  color: hsl(218, 22%, 67%);
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.8;
+}
+
+.card-2 {
+  background-color: hsl(179, 62%, 43%);
+  color: #fff;
+}
+
+.price-box {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.price {
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+
+.per-month {
+  color: hsla(203, 44%, 93%, 0.64);
+}
+
+.btn {
+  text-decoration: none;
+  color: hsl(0, 0%, 98%);
+  text-align: center;
+  background-color: hsl(71, 73%, 54%);
+  border-radius: 0.5rem;
+  font-weight: 700;
+  padding: 1.3rem;
+  box-shadow: 0 0.8rem 1rem rgba(0, 0, 0, 0.152);
+}
+
+.card-3 {
+  background-color: hsl(179, 55%, 48%);
+  color: #fff;
+}
+
+.card-3__list {
+  list-style: none;
+  color: hsla(203, 44%, 93%, 0.853);
+}
+
+.card-3__list li {
+  margin-bottom: 0.3rem;
+}
+
+@media (min-width: 600px) {
+  .card {
+    padding: 2rem;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 600px;
+  }
+
+  .card-1 {
+    grid-column: 1 / -1;
+  }
+
+  .card-1__copy {
+    padding-right: 5rem;
+  }
+}
